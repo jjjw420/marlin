@@ -424,7 +424,9 @@
       #endif
 
       #define BTN_ENC           35
-      #define SD_DETECT_PIN     49
+      //#define SD_DETECT_PIN     49
+      // set to -1 to use AUX3 on MKS Gen-L
+      #define SD_DETECT_PIN     -1
       #define KILL_PIN          41
 
       #if ENABLED(BQ_LCD_SMART_CONTROLLER)
