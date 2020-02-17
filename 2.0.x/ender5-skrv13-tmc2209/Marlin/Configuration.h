@@ -484,9 +484,10 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  #define DEFAULT_Kp 43.54
-  #define DEFAULT_Ki 6.56
-  #define DEFAULT_Kd 72.24
+  //M301 P34.93 I3.78 D80.78
+  #define DEFAULT_Kp 34.93
+  #define DEFAULT_Ki 3.78
+  #define DEFAULT_Kd 80.78
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -544,10 +545,10 @@
   //#define DEFAULT_bedKi .023
   //#define DEFAULT_bedKd 305.4
 
-  //M304 P434.36 I81.58 D578.18
-  #define DEFAULT_bedKp 539.07
-  #define DEFAULT_bedKi 106.07
-  #define DEFAULT_bedKd 684.89
+  //M304 189.55 I36.62 D654.02
+  #define DEFAULT_bedKp 189.55
+  #define DEFAULT_bedKi 36.62
+  #define DEFAULT_bedKd 654.02
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -950,7 +951,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 43, -5, 0.5 }
+#define NOZZLE_TO_PROBE_OFFSET { -42, -15, 0.5 }
 
 
 // Most probes should stay away from the edges of the bed, but
@@ -1727,7 +1728,7 @@
 //
 // Add individual axis homing items (Home X, Home Y, and Home Z) to the LCD menu.
 //
-//#define INDIVIDUAL_AXIS_HOMING_MENU
+#define INDIVIDUAL_AXIS_HOMING_MENU
 
 //
 // SPEAKER/BUZZER
